@@ -1,0 +1,99 @@
+.app-container {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+}
+.comments-container {
+  width: 90%;
+}
+.form-container {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+.title {
+  font-family: 'roboto';
+  font-size: 50px;
+  color: #1e293b;
+  order: 0;
+}
+.form-title {
+  font-family: 'roboto';
+  color: #475569;
+  font-weight: 500;
+}
+.my-form {
+  order: 2;
+}
+.user-name {
+  font-family: 'roboto';
+  color: #1e293b;
+  padding: 5px;
+  font-weight: 400;
+  font-size: 15px;
+  padding-left: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #cbd2d9;
+  border-radius: 3px;
+  width: 100%;
+}
+.user-comment {
+  font-family: 'roboto';
+  font-size: 15px;
+  color: #1e293b;
+  padding: 5px;
+  padding-left: 10px;
+  border: 1px solid #cbd2d9;
+  border-radius: 3px;
+  width: 100%;
+}
+.add-comment-btn {
+  color: #dee0e3;
+  font-family: 'roboto';
+  background-color: #0284c7;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 16px;
+  padding-right: 16px;
+  border: none;
+  border-radius: 3px;
+  margin-top: 10px;
+}
+.comments-image {
+  width: 100%;
+  order: 1;
+}
+.horizontal-line {
+  border: 1px solid #cbd2d9;
+}
+.comments-count {
+  background-color: #0284c7;
+  font-family: 'roboto';
+  border-radius: 5px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  color: #dee0e3;
+}
+.comments {
+  font-family: 'roboto';
+  color: #475569;
+  margin-left: 10px;
+}
+@media screen and (min-width: 768px) {
+  .comments-image {
+    width: 400px;
+    height: 350px;
+    order: 2;
+  }
+  .form-container {
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .my-form {
+    order: 1;
+  }
+}
